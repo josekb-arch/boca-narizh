@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Boca Nariz Interlomas | Tapas y cocina española en Paseo Interlomas</title>
+<meta name="description" content="Boca Nariz Interlomas: tapas, vino y cocina española en Paseo Interlomas, Naucalpan, Estado de México. Consulta la carta, cómo llegar y llama para reservar.">
+<meta name="keywords" content="restaurante español Interlomas, tapas Interlomas, Boca Nariz, Paseo Interlomas, vino, cocina española Naucalpan">
+<meta name="theme-color" content="#17120F">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Boca Nariz Interlomas">
+<meta property="og:description" content="España se disfruta bocado a bocado. Tapas y vino en Paseo Interlomas.">
+<meta property="og:url" content="https://boca-nariz.com.mx/">
+<meta property="og:locale" content="es_MX">
+<link rel="canonical" href="https://boca-nariz.com.mx/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Boca Nariz Interlomas",
+  "servesCuisine": ["Española", "Tapas"],
+  "telephone": "+52 55 2345 9621",
+  "url": "https://boca-nariz.com.mx/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vialidad de la Barranca 6, Bosque de las Palmas, Paseo Interlomas",
+    "addressLocality": "Naucalpan de Juárez",
+    "addressRegion": "Estado de México",
+    "postalCode": "52779",
+    "addressCountry": "MX"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..600&family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  ============================================================
+  NOTAS DE PRODUCCIÓN (sustituir antes de publicar)
+  1. FOTOGRAFÍAS: todas las imágenes son ilustraciones de línea
+     generadas en código. Sustitúyelas por fotografía oficial
+     rellenando el objeto PHOTOS en el script final (rutas a
+     archivos .webp/.jpg optimizados). Si una clave queda vacía,
+     se muestra la ilustración.
+  2. LOGOTIPO: el nombre se compone tipográficamente. Sustituir
+     por el logotipo oficial si existe.
+  3. CARTA: el botón "Consultar carta completa" apunta al sitio
+     oficial. Cambiar CARTA_URL por el enlace directo a la carta.
+  4. HORARIO: solo consta "cierra a las 10 p. m.". Confirmar el
+     horario completo.
+  5. OPINIONES: no se incluyen testimonios. Añadir un resumen
+     solo tras verificar reseñas reales.
+  6. MAPA: el mapa es una ilustración enlazada a Google Maps.
+     En hosting propio puede sustituirse por el iframe oficial
+     (ver comentario en la sección #visita).
+  7. REDES SOCIALES: no se enlazan hasta verificar las cuentas.
+  ============================================================
+-->
+
+<style>
+:root{
+  --carbon:#17120F;
+  --carbon-2:#211915;
+  --vino:#6B1B2A;
+  --vino-hondo:#2A0D12;
+  --crema:#F0E4CC;
+  --arena:#BFA27A;
+  --oro:#C8A05A;
+  --texto:#F0E4CC;
+  --texto-suave:rgba(240,228,204,.68);
+  --linea:rgba(200,160,90,.22);
+  --ease:cubic-bezier(.22,.8,.18,1);
+  --ease-spring:cubic-bezier(.32,.72,0,1);
+  --serif:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --sans:"Hanken Grotesk", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --texto:#F0E4CC; --texto-suave:rgba(240,228,204,.68); }
+}
+:root[data-theme="dark"]{ --texto:#F0E4CC; --texto-suave:rgba(240,228,204,.68); }
+/* La identidad de marca es oscura en ambos modos: el tema claro conserva la paleta. */
+
+*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px);-webkit-text-size-adjust:100%}
+body{background:var(--carbon);color:var(--texto);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--oro);outline-offset:4px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--crema);color:var(--carbon);padding:.7rem 1rem;border-radius:999px;text-decoration:none}
+.skip:focus{top:1rem}
+
+/* Grano de película fijo */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+
+.wrap{width:min(1320px,100% - clamp(2rem,6vw,6rem));margin-inline:auto}
+.serif{font-family:var(--serif)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.02;letter-spacing:-.01em}
+h2{font-size:clamp(2.6rem,6.2vw,5.6rem)}
+h3{font-size:clamp(1.45rem,2vw,1.85rem);line-height:1.12}
+p{max-width:62ch}
+.lede{font-size:clamp(1.1rem,1.4vw,1.3rem);color:var(--texto-suave);line-height:1.7}
+
+/* ---------- Botones ---------- */
+.btn{display:inline-flex;align-items:center;gap:.9rem;padding:.55rem .6rem .55rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:500;font-size:1rem;letter-spacing:.01em;position:relative;overflow:hidden;isolation:isolate;transition:transform .5s var(--ease-spring),color .5s var(--ease)}
+.btn .ico{width:2.4rem;height:2.4rem;border-radius:50%;display:grid;place-items:center;transition:transform .55s var(--ease-spring)}
+.btn .ico svg{width:15px;height:15px}
+.btn::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease-spring)}
+.btn:hover .ico{transform:translateX(3px) rotate(-45deg) scale(1.05)}
+.btn:hover::before{transform:scaleX(1)}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--crema);color:var(--carbon)}
+.btn-primary .ico{background:var(--vino);color:var(--crema)}
+.btn-primary::before{background:var(--oro)}
+.btn-ghost{color:var(--crema);box-shadow:inset 0 0 0 1px rgba(240,228,204,.35)}
+.btn-ghost .ico{background:rgba(240,228,204,.1)}
+.btn-ghost::before{background:rgba(240,228,204,.08)}
+.btn-wine{background:var(--vino);color:var(--crema)}
+.btn-wine .ico{background:rgba(240,228,204,.12)}
+.btn-wine::before{background:#7f2234}
+
+.link{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .5s var(--ease-spring)}
+.link:hover,.link:focus-visible{background-size:100% 1px}
+
+/* ---------- Navbar ---------- */
+.nav{position:fixed;top:calc(env(safe-area-inset-top,0px) + 14px);left:50%;transform:translateX(-50%);z-index:50;width:min(1180px,calc(100% - 1.5rem));display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.55rem .6rem .55rem 1.4rem;border-radius:999px;transition:background .6s var(--ease),box-shadow .6s var(--ease),transform .6s var(--ease-spring),padding .6s var(--ease)}
+.nav.scrolled{background:rgba(23,18,15,.72);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);box-shadow:inset 0 0 0 1px rgba(200,160,90,.18),0 20px 50px -30px rgba(0,0,0,.6)}
+.nav.hidden{transform:translate(-50%,-140%)}
+.brand{font-family:var(--serif);font-size:1.35rem;font-weight:600;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+.brand small{font-family:var(--sans);font-size:.72rem;letter-spacing:.04em;font-weight:400;text-transform:none;color:var(--texto-suave);margin-left:.5rem}
+.nav ul{list-style:none;display:flex;gap:clamp(1rem,2vw,2rem)}
+.nav ul a{text-decoration:none;font-size:.95rem;color:var(--texto-suave);transition:color .4s var(--ease)}
+.nav ul a:hover,.nav ul a.active{color:var(--crema)}
+.nav ul a.active{background-size:100% 1px}
+.nav-cta{padding:.45rem .5rem .45rem 1.1rem;font-size:.92rem}
+.nav-cta .ico{width:2rem;height:2rem}
+.burger{display:none;width:2.9rem;height:2.9rem;border-radius:50%;background:rgba(240,228,204,.1);position:relative}
+.burger span{position:absolute;left:50%;top:50%;width:18px;height:1.5px;background:var(--crema);border-radius:2px;transition:transform .5s var(--ease-spring)}
+.burger span:nth-child(1){transform:translate(-50%,-4px)}
+.burger span:nth-child(2){transform:translate(-50%,4px)}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translate(-50%,0) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){transform:translate(-50%,0) rotate(-45deg)}
+
+.menu{position:fixed;inset:0;z-index:45;background:rgba(42,13,18,.94);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:6rem 2rem calc(2rem + env(safe-area-inset-bottom,0px));opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility 0s .5s}
+.menu.open{opacity:1;visibility:visible;transition:opacity .5s var(--ease)}
+.menu ul{list-style:none;display:grid;gap:.4rem}
+.menu a{font-family:var(--serif);font-size:clamp(2.3rem,10vw,3.4rem);text-decoration:none;display:inline-block;transform:translateY(2.5rem);opacity:0;transition:transform .7s var(--ease-spring),opacity .5s var(--ease)}
+.menu.open a{transform:none;opacity:1}
+.menu li:nth-child(2) a{transition-delay:.05s}.menu li:nth-child(3) a{transition-delay:.1s}.menu li:nth-child(4) a{transition-delay:.15s}.menu li:nth-child(5) a{transition-delay:.2s}.menu li:nth-child(6) a{transition-delay:.25s}
+.menu .menu-foot{margin-top:2.5rem;color:var(--texto-suave);font-size:.95rem}
+.menu .menu-foot a{font-family:var(--sans);font-size:1rem;opacity:1;transform:none}
+
+/* ---------- Ilustraciones / marcos de foto ---------- */
+.ph{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#3b1a1c 0%,#22130f 55%,#140e0b 100%);isolation:isolate}
+.ph::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 70% 30%,rgba(200,160,90,.18),transparent 70%);z-index:0}
+.ph svg.art{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.ph .inner{position:absolute;inset:-8%;will-change:transform}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;min-height:100dvh;display:grid;align-items:end;padding:8rem 0 clamp(3rem,7vh,5.5rem);overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media .ph{position:absolute;inset:0}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,18,15,.55) 0%,rgba(23,18,15,.15) 35%,rgba(23,18,15,.75) 78%,var(--carbon) 100%),radial-gradient(80% 60% at 50% 40%,transparent 40%,rgba(23,18,15,.6) 100%);z-index:2}
+.hero-content{position:relative;z-index:3}
+.wordmark{font-family:var(--serif);font-weight:500;text-transform:uppercase;line-height:.84;letter-spacing:-.035em;font-size:clamp(4.6rem,17.5vw,17rem);font-variation-settings:"opsz" 96}
+.wordmark .line{display:block;overflow:hidden;padding-bottom:.04em}
+.wordmark .line:nth-child(2){padding-left:clamp(1.5rem,14vw,16rem)}
+.wordmark .ch{display:inline-block;will-change:transform}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem;align-items:end;margin-top:clamp(1.8rem,4vh,3rem)}
+.tagline{font-family:var(--serif);font-style:italic;font-size:clamp(1.35rem,2.4vw,2.1rem);font-weight:400;max-width:22ch;line-height:1.2}
+.hero-place{color:var(--texto-suave);margin-top:.8rem;font-size:.98rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:flex-end}
+.scroll-cue{position:absolute;right:clamp(1rem,3vw,2.5rem);top:50%;z-index:3;display:flex;flex-direction:column;align-items:center;gap:.9rem;color:var(--texto-suave);font-size:.78rem;letter-spacing:.06em;text-decoration:none;writing-mode:vertical-rl}
+.scroll-cue .track{width:1px;height:70px;background:rgba(240,228,204,.25);position:relative;overflow:hidden}
+.scroll-cue .track::after{content:"";position:absolute;left:0;top:-30%;width:1px;height:30%;background:var(--oro);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+
+/* ---------- Separadores orgánicos ---------- */
+.sep{display:block;width:100%;height:clamp(40px,7vw,110px);position:relative;z-index:2}
+
+/* ---------- Esencia ---------- */
+.esencia{padding:clamp(6rem,14vw,11rem) 0 clamp(6rem,12vw,10rem);position:relative}
+.esencia-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1rem,2vw,2rem);align-items:start}
+.esencia-fig{grid-column:1 / span 6;aspect-ratio:4/5;border-radius:clamp(1rem,2vw,2rem)}
+.esencia-fig2{grid-column:5 / span 3;aspect-ratio:1/1;border-radius:1.4rem;margin-top:-28%;position:relative;z-index:2;box-shadow:0 40px 80px -40px rgba(0,0,0,.8),0 0 0 8px var(--carbon)}
+.esencia-text{grid-column:8 / span 5;grid-row:1;padding-top:clamp(2rem,8vw,7rem)}
+.esencia-text h2{font-size:clamp(2.6rem,5.2vw,4.8rem);margin-bottom:2rem}
+.esencia-text p+p{margin-top:1.2rem}
+.sentidos{margin-top:2.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;border-top:1px solid var(--linea);padding-top:1.6rem}
+.sentidos dt{font-family:var(--serif);font-size:1.5rem}
+.sentidos dd{color:var(--texto-suave);font-size:.95rem;margin-top:.3rem}
+
+/* ---------- Carta (scroll horizontal) ---------- */
+.carta{background:var(--crema);color:var(--carbon);position:relative}
+.carta-head{padding:clamp(5rem,10vw,8rem) 0 clamp(2rem,4vw,3rem);display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap}
+.carta-head h2{max-width:11ch}
+.carta-head p{color:rgba(23,18,15,.7);max-width:36ch}
+.h-pin{overflow:hidden;padding-bottom:clamp(3rem,6vw,5rem)}
+.h-track{display:flex;gap:clamp(1.2rem,2.2vw,2.2rem);padding-inline:max(calc((100vw - 1320px)/2),clamp(1rem,3vw,3rem));width:max-content;will-change:transform}
+.dish{width:clamp(270px,27vw,400px);flex:none;text-decoration:none;color:inherit;display:block}
+.dish:nth-child(even){margin-top:clamp(2rem,5vw,4.5rem)}
+.dish-shell{padding:6px;border-radius:1.75rem;background:rgba(23,18,15,.06);box-shadow:inset 0 0 0 1px rgba(23,18,15,.08);transition:transform .7s var(--ease-spring),box-shadow .7s var(--ease)}
+.dish .ph{aspect-ratio:4/5;border-radius:calc(1.75rem - 6px)}
+.dish .ph .inner{transition:transform 1.1s var(--ease-spring)}
+.dish:hover .dish-shell,.dish:focus-within .dish-shell{transform:translateY(-10px);box-shadow:inset 0 0 0 1px rgba(23,18,15,.12),0 40px 60px -40px rgba(42,13,18,.55)}
+.dish:hover .ph .inner{transform:scale(1.07)}
+.dish h3{margin-top:1.3rem;padding-inline:.4rem}
+.dish p{padding-inline:.4rem;margin-top:.5rem;color:rgba(23,18,15,.68);font-size:.98rem;line-height:1.55}
+.dish-end{width:clamp(280px,30vw,440px);flex:none;align-self:center;padding:2rem}
+.dish-end h3{font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:1rem}
+.dish-end p{color:rgba(23,18,15,.68);margin-bottom:1.8rem}
+.dish-end .btn-primary{background:var(--carbon);color:var(--crema)}
+.h-progress{height:1px;background:rgba(23,18,15,.15);margin-top:clamp(2.5rem,5vw,4rem);position:relative}
+.h-progress span{position:absolute;inset:0;background:var(--vino);transform-origin:left;transform:scaleX(0)}
+.carta .sep path{fill:var(--crema)}
+
+/* ---------- Ambiente ---------- */
+.ambiente{position:relative;background:var(--vino-hondo);padding:clamp(7rem,14vw,12rem) 0;overflow:hidden}
+.ambiente::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 40% at 80% 20%,rgba(200,160,90,.16),transparent 70%),radial-gradient(60% 50% at 10% 90%,rgba(107,27,42,.6),transparent 70%)}
+.amb-grid{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1rem,2vw,2rem);align-items:center}
+.amb-title{grid-column:1 / span 7;font-size:clamp(3rem,7.5vw,7rem);line-height:.95;position:relative;z-index:2}
+.amb-text{grid-column:1 / span 5;margin-top:2.4rem;position:relative;z-index:2}
+.amb-figs{grid-column:8 / span 5;grid-row:1 / span 2;position:relative;height:clamp(420px,52vw,720px)}
+.amb-figs .ph{position:absolute;border-radius:1.5rem}
+.amb-figs .a{inset:0 18% 22% 0}
+.amb-figs .b{width:52%;aspect-ratio:3/4;right:0;bottom:0;box-shadow:0 0 0 8px var(--vino-hondo)}
+.amb-line{position:relative;margin-top:clamp(5rem,10vw,9rem);font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,3.6vw,3.2rem);line-height:1.2;max-width:24ch;margin-left:auto;text-align:right;color:var(--arena)}
+
+/* ---------- Galería ---------- */
+.galeria{padding:clamp(6rem,12vw,10rem) 0}
+.gal-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.gal-head p{color:var(--texto-suave);max-width:34ch}
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(90px,9vw,140px);gap:clamp(.7rem,1.4vw,1.2rem)}
+.gal button{position:relative;border-radius:1.2rem;overflow:hidden;display:block;text-align:left}
+.gal button .ph{position:absolute;inset:0}
+.gal button .ph .inner{transition:transform 1s var(--ease-spring)}
+.gal button:hover .ph .inner{transform:scale(1.06)}
+.gal button .cap{position:absolute;left:1rem;bottom:.9rem;z-index:3;font-size:.9rem;color:var(--crema);opacity:0;transform:translateY(8px);transition:all .5s var(--ease-spring)}
+.gal button::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(transparent 55%,rgba(23,18,15,.75));opacity:0;transition:opacity .5s var(--ease)}
+.gal button:hover::after,.gal button:focus-visible::after{opacity:1}
+.gal button:hover .cap,.gal button:focus-visible .cap{opacity:1;transform:none}
+.g1{grid-column:1 / span 7;grid-row:span 4}
+.g2{grid-column:8 / span 5;grid-row:span 2}
+.g3{grid-column:8 / span 2;grid-row:span 2}
+.g4{grid-column:10 / span 3;grid-row:span 2}
+.g5{grid-column:1 / span 4;grid-row:span 3}
+.g6{grid-column:5 / span 3;grid-row:span 3}
+.g7{grid-column:8 / span 5;grid-row:span 3}
+
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--crema)}
+dialog.lightbox::backdrop{background:rgba(14,9,8,.92);backdrop-filter:blur(10px)}
+.lb-inner{position:fixed;inset:0;display:grid;grid-template-rows:auto 1fr auto;padding:calc(1rem + env(safe-area-inset-top,0px)) clamp(1rem,3vw,2.5rem) calc(1rem + env(safe-area-inset-bottom,0px))}
+.lb-top{display:flex;justify-content:space-between;align-items:center}
+.lb-stage{display:grid;place-items:center;min-height:0;padding:1rem 0}
+.lb-stage .ph{width:min(1100px,100%);aspect-ratio:3/2;max-height:100%;border-radius:1.2rem;animation:lbin .7s var(--ease-spring)}
+@keyframes lbin{from{opacity:0;transform:scale(.94)}}
+.lb-nav{display:flex;justify-content:center;gap:.8rem}
+.round{width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(240,228,204,.3);transition:background .4s var(--ease),transform .4s var(--ease-spring)}
+.round:hover{background:rgba(240,228,204,.1)}
+.round:active{transform:scale(.94)}
+.round svg{width:18px;height:18px}
+
+/* ---------- Opiniones ---------- */
+.opiniones{background:var(--carbon-2);padding:clamp(6rem,12vw,10rem) 0;position:relative}
+.op-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2rem;align-items:center}
+.op-score{grid-column:1 / span 6}
+.op-num{font-family:var(--serif);font-size:clamp(7rem,20vw,16rem);line-height:.8;letter-spacing:-.04em;font-weight:500}
+.op-num small{font-size:.28em;color:var(--texto-suave);letter-spacing:0;margin-left:.15em}
+.stars{display:flex;gap:6px;margin-top:1.6rem}
+.stars svg{width:26px;height:26px}
+.op-meta{margin-top:1rem;color:var(--texto-suave)}
+.op-meta strong{color:var(--crema);font-weight:500}
+.op-text{grid-column:8 / span 5}
+.op-text h2{font-size:clamp(2.2rem,4.2vw,3.6rem);margin-bottom:1.5rem}
+.op-text p{color:var(--texto-suave);margin-bottom:2rem}
+.op-note{font-size:.85rem;color:rgba(240,228,204,.45);margin-top:1.4rem}
+
+/* ---------- Visítanos ---------- */
+.visita{padding:clamp(6rem,12vw,10rem) 0 clamp(4rem,8vw,6rem)}
+.vis-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1.5rem,3vw,3rem);align-items:stretch}
+.vis-info{grid-column:1 / span 5}
+.vis-info h2{margin-bottom:2.2rem}
+.vis-list{display:grid;gap:1.5rem;border-top:1px solid var(--linea);padding-top:1.8rem}
+.vis-list dt{font-size:.88rem;color:var(--arena);margin-bottom:.2rem}
+.vis-list dd{font-size:1.1rem;line-height:1.5}
+.vis-list dd a{text-decoration:none}
+.vis-list .hint{display:block;font-size:.85rem;color:var(--texto-suave);margin-top:.2rem}
+.vis-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.4rem}
+.map-shell{grid-column:7 / span 6;padding:8px;border-radius:2rem;background:rgba(240,228,204,.04);box-shadow:inset 0 0 0 1px var(--linea);min-height:460px;display:flex}
+.map{flex:1;border-radius:calc(2rem - 8px);overflow:hidden;position:relative;background:#1d1613;text-decoration:none;display:block}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map-label{position:absolute;left:1.2rem;bottom:1.2rem;right:1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 1rem .9rem 1.3rem;border-radius:999px;background:rgba(23,18,15,.85);box-shadow:inset 0 0 0 1px var(--linea);font-size:.95rem}
+.map-label .ico{width:2.2rem;height:2.2rem;border-radius:50%;background:var(--vino);display:grid;place-items:center;flex:none;transition:transform .5s var(--ease-spring)}
+.map:hover .map-label .ico{transform:rotate(-45deg)}
+.pin-pulse{transform-origin:center;transform-box:fill-box;animation:pulse 2.6s var(--ease) infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+
+/* ---------- Footer ---------- */
+.foot{border-top:1px solid var(--linea);padding:clamp(4rem,8vw,6rem) 0 3rem}
+.foot-mark{font-family:var(--serif);text-transform:uppercase;font-size:clamp(3.4rem,13vw,12rem);line-height:.85;letter-spacing:-.035em;color:transparent;-webkit-text-stroke:1px rgba(200,160,90,.5)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem;margin-top:3rem;color:var(--texto-suave);font-size:.95rem}
+.foot-grid h3{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--arena);margin-bottom:.8rem}
+.foot-grid ul{list-style:none;display:grid;gap:.45rem}
+.foot-grid a{text-decoration:none}
+.foot-bottom{margin-top:3.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.82rem;color:rgba(240,228,204,.42)}
+
+/* ---------- Estados iniciales de animación (solo si hay JS + movimiento) ---------- */
+.anim .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.anim .wi{display:inline-block;transform:translateY(105%)}
+.anim [data-reveal]{opacity:0;transform:translateY(40px)}
+.anim .reveal-img{clip-path:inset(100% 0 0 0 round 1.5rem)}
+.anim .wordmark .ch{transform:translateY(105%)}
+.anim .hero-media .ph{clip-path:inset(12% 12% 12% 12% round 2rem)}
+.anim .hero-fade{opacity:0;transform:translateY(24px)}
+.io-ready [data-reveal]{transition:opacity 1s var(--ease),transform 1.1s var(--ease-spring)}
+.io-ready [data-reveal].in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .burger{display:block}
+  .nav-cta{display:none}
+}
+@media (max-width:900px){
+  .esencia-fig{grid-column:1 / -1;aspect-ratio:4/4.4}
+  .esencia-fig2{grid-column:7 / span 6;margin-top:-30%}
+  .esencia-text{grid-column:1 / -1;grid-row:auto;padding-top:2.5rem}
+  .amb-title,.amb-text,.amb-figs{grid-column:1 / -1}
+  .amb-figs{grid-row:auto;margin-top:3rem;height:auto;aspect-ratio:1/1.05}
+  .amb-line{text-align:left;margin-left:0}
+  .op-score,.op-text{grid-column:1 / -1}
+  .vis-info,.map-shell{grid-column:1 / -1}
+  .map-shell{min-height:380px}
+  .h-pin{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .h-pin::-webkit-scrollbar{display:none}
+  .dish,.dish-end{scroll-snap-align:center}
+  .dish{width:min(78vw,340px)}
+  .dish:nth-child(even){margin-top:0}
+  .h-progress{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid > div:first-child{grid-column:1 / -1}
+}
+@media (max-width:767px){
+  .hero-foot{grid-template-columns:1fr}
+  .hero-ctas{justify-content:flex-start}
+  .scroll-cue{display:none}
+  .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}
+  .g1{grid-column:1 / -1;grid-row:span 2}
+  .g2,.g7{grid-column:1 / -1;grid-row:span 1}
+  .g3,.g4,.g5,.g6{grid-column:span 1;grid-row:span 1}
+  .sentidos{grid-template-columns:1fr}
+  .brand small{display:none}
+  .btn{font-size:.95rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#esencia">Saltar al contenido</a>
+
+<!-- ============ NAVBAR ============ -->
+<header>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#inicio" class="brand" aria-label="Boca Nariz, ir al inicio">Boca Nariz<small>Interlomas</small></a>
+    <ul>
+      <li><a class="link" href="#inicio">Inicio</a></li>
+      <li><a class="link" href="#esencia">Nuestra esencia</a></li>
+      <li><a class="link" href="#carta">Carta</a></li>
+      <li><a class="link" href="#galeria">Galería</a></li>
+      <li><a class="link" href="#opiniones">Opiniones</a></li>
+      <li><a class="link" href="#visita">Ubicación</a></li>
+    </ul>
+    <a class="btn btn-primary nav-cta" href="tel:+525523459621">Llamar<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </nav>
+  <div class="menu" id="menu" aria-hidden="true">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#esencia">Nuestra esencia</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#visita">Ubicación</a></li>
+    </ul>
+    <div class="menu-foot">
+      <p>Paseo Interlomas, Naucalpan</p>
+      <p><a class="link" href="tel:+525523459621">55 2345 9621</a></p>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ 1. INICIO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-media" aria-hidden="true">
+    <div class="ph" data-art="mesa" data-photo="hero" data-speed="0.25"></div>
+  </div>
+  <a href="#esencia" class="scroll-cue" aria-label="Desplázate para descubrir"><span>Desliza</span><span class="track"></span></a>
+  <div class="wrap hero-content">
+    <h1 class="wordmark" id="hero-title" aria-label="Boca Nariz">
+      <span class="line" aria-hidden="true">Boca</span>
+      <span class="line" aria-hidden="true">Nariz</span>
+    </h1>
+    <div class="hero-foot">
+      <div class="hero-fade">
+        <p class="tagline">España se disfruta bocado a bocado</p>
+        <p class="hero-place">Tapas, vino y cocina española en Paseo Interlomas</p>
+      </div>
+      <div class="hero-ctas hero-fade">
+        <a class="btn btn-primary" href="#carta">Descubre nuestra carta<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+        <a class="btn btn-ghost" href="#visita">Cómo llegar<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. NUESTRA ESENCIA ============ -->
+<section class="esencia" id="esencia" aria-labelledby="esencia-title">
+  <div class="wrap esencia-grid">
+    <div class="ph esencia-fig reveal-img" data-art="tabla" data-photo="esencia1" role="img" aria-label="Tabla de quesos y jamón serrano para compartir"><div class="inner" data-speed="-0.12"></div></div>
+    <div class="ph esencia-fig2 reveal-img" data-art="copas" data-photo="esencia2" role="img" aria-label="Dos copas de vino tinto"><div class="inner"></div></div>
+    <div class="esencia-text">
+      <h2 id="esencia-title" class="split">Un rincón de España en Interlomas</h2>
+      <p class="lede" data-reveal>Aquí la mesa se llena poco a poco: una tabla para abrir, unas croquetas que se terminan antes de lo previsto, otra ronda de vino.</p>
+      <p data-reveal style="color:var(--texto-suave)">La idea es sencilla. Pedir para el centro, probar un poco de todo y quedarse un rato más con los amigos.</p>
+      <dl class="sentidos" data-reveal>
+        <div><dt>Boca</dt><dd>Tapas y platos pensados para compartir.</dd></div>
+        <div><dt>Nariz</dt><dd>Una copa de vino que acompaña la conversación.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. NUESTRA CARTA ============ -->
+<section class="carta" id="carta" aria-labelledby="carta-title">
+  <svg class="sep" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;top:-1px;left:0;transform:translateY(-99%)"><path d="M0 110V60C180 10 360 0 560 30s420 70 620 40 260-50 260-50v90z" fill="#F0E4CC"/></svg>
+  <div class="wrap carta-head">
+    <h2 id="carta-title" class="split">Para pedir al centro</h2>
+    <p data-reveal>Una selección de la carta. Desliza para recorrerla y consulta la carta completa en el sitio oficial.</p>
+  </div>
+  <div class="h-pin" id="hpin">
+    <div class="h-track" id="htrack" role="list"></div>
+    <div class="wrap h-progress" aria-hidden="true"><span id="hbar"></span></div>
+  </div>
+</section>
+
+<!-- ============ 4. VINO, TAPAS Y AMBIENTE ============ -->
+<section class="ambiente" id="ambiente" aria-labelledby="amb-title">
+  <div class="wrap amb-grid">
+    <h2 class="amb-title split" id="amb-title">Vino, tapas y buena compañía</h2>
+    <div class="amb-text">
+      <p class="lede" data-reveal>Hay mesas que se piden para cenar y otras que se piden para quedarse. Elige una botella, deja que las tapas vayan llegando y que la conversación decida cuándo termina la noche.</p>
+    </div>
+    <div class="amb-figs">
+      <div class="ph a reveal-img" data-art="botella" data-photo="ambiente1" role="img" aria-label="Botella y copa de vino tinto sobre la mesa"><div class="inner" data-speed="-0.1"></div></div>
+      <div class="ph b reveal-img" data-art="copas" data-photo="ambiente2" role="img" aria-label="Brindis con copas de vino" data-speed="0.18"><div class="inner"></div></div>
+    </div>
+  </div>
+  <div class="wrap"><p class="amb-line" data-reveal>Una copa, algo para picar y nadie con prisa por irse.</p></div>
+</section>
+
+<!-- ============ 5. GALERÍA ============ -->
+<section class="galeria" id="galeria" aria-labelledby="gal-title">
+  <div class="wrap">
+    <div class="gal-head">
+      <h2 id="gal-title" class="split">La mesa, de cerca</h2>
+      <p data-reveal>Toca una imagen para verla en grande.</p>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<!-- ============ 6. OPINIONES ============ -->
+<section class="opiniones" id="opiniones" aria-labelledby="op-title">
+  <div class="wrap op-grid">
+    <div class="op-score" data-reveal>
+      <p class="op-num" aria-label="Valoración de 4.2 sobre 5"><span class="count" data-to="4.2" data-dec="1">4.2</span><small>/5</small></p>
+      <div class="stars" aria-hidden="true" id="stars"></div>
+      <p class="op-meta">Valoración en Google, con <strong>aprox. <span class="count" data-to="160" data-dec="0">160</span> reseñas</strong>.</p>
+    </div>
+    <div class="op-text">
+      <h2 id="op-title" class="split">Lo que dicen quienes ya vinieron</h2>
+      <p data-reveal>En sus reseñas, los comensales hablan de la comida, el servicio y el ambiente. Léelas completas en Google y saca tus propias conclusiones.</p>
+      <a data-reveal class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Boca+Nariz+Interlomas" target="_blank" rel="noopener">Leer reseñas en Google<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+      <p class="op-note" data-reveal>Datos informativos de Google. La cifra puede variar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. VISÍTANOS ============ -->
+<section class="visita" id="visita" aria-labelledby="vis-title">
+  <div class="wrap vis-grid">
+    <div class="vis-info">
+      <h2 id="vis-title" class="split">Visítanos</h2>
+      <dl class="vis-list" data-reveal>
+        <div><dt>Restaurante</dt><dd>Boca Nariz Interlomas</dd></div>
+        <div><dt>Dirección</dt><dd><address style="font-style:normal">Vialidad de la Barranca 6, Bosque de las Palmas, 52779 Naucalpan de Juárez, Estado de México</address><span class="hint">Dentro de Paseo Interlomas</span></dd></div>
+        <div><dt>Teléfono</dt><dd><a class="link" href="tel:+525523459621">55 2345 9621</a></dd></div>
+        <div><dt>Horario</dt><dd>Cierre indicado: 10 p. m.<span class="hint">Confirma el horario completo por teléfono antes de tu visita.</span></dd></div>
+        <div><dt>Sitio web</dt><dd><a class="link" href="https://boca-nariz.com.mx/" target="_blank" rel="noopener">boca-nariz.com.mx</a></dd></div>
+      </dl>
+      <div class="vis-ctas" data-reveal>
+        <a class="btn btn-wine" id="dir-btn" target="_blank" rel="noopener" href="#">Obtener indicaciones<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+        <a class="btn btn-ghost" href="tel:+525523459621">Llamar al restaurante<span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></a>
+      </div>
+    </div>
+    <!--
+      Para un mapa interactivo en hosting propio, sustituir el enlace .map por:
+      <iframe src="https://www.google.com/maps?q=Boca+Nariz+Interlomas,+Vialidad+de+la+Barranca+6,+Naucalpan&output=embed"
+              title="Mapa de Boca Nariz Interlomas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              style="border:0;width:100%;height:100%"></iframe>
+    -->
+    <div class="map-shell" data-reveal>
+      <a class="map" id="map-link" target="_blank" rel="noopener" href="#" aria-label="Abrir la ubicación de Boca Nariz en Google Maps">
+        <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="rgba(200,160,90,.06)"/></pattern></defs>
+          <rect width="600" height="460" fill="url(#grid)"/>
+          <path d="M-20 360C120 300 200 330 300 250s180-170 340-150" fill="none" stroke="rgba(240,228,204,.16)" stroke-width="22" stroke-linecap="round"/>
+          <path d="M-20 360C120 300 200 330 300 250s180-170 340-150" fill="none" stroke="rgba(23,18,15,.9)" stroke-width="16" stroke-linecap="round"/>
+          <path d="M80 -20C120 120 140 220 110 480" fill="none" stroke="rgba(240,228,204,.1)" stroke-width="12"/>
+          <path d="M420 480C430 360 470 300 640 280" fill="none" stroke="rgba(240,228,204,.1)" stroke-width="10"/>
+          <path d="M180 -20C240 80 360 120 460 90" fill="none" stroke="rgba(240,228,204,.08)" stroke-width="8"/>
+          <path d="M0 200C160 190 240 140 320 60" fill="none" stroke="rgba(240,228,204,.06)" stroke-width="6"/>
+          <rect x="250" y="160" width="140" height="100" rx="14" fill="rgba(107,27,42,.35)" stroke="rgba(200,160,90,.35)"/>
+          <text x="320" y="282" text-anchor="middle" fill="rgba(240,228,204,.55)" font-family="Hanken Grotesk, sans-serif" font-size="13">Paseo Interlomas</text>
+          <circle class="pin-pulse" cx="320" cy="205" r="14" fill="rgba(200,160,90,.5)"/>
+          <circle cx="320" cy="205" r="8" fill="#C8A05A" stroke="#17120F" stroke-width="3"/>
+        </svg>
+        <span class="map-label"><span>Ver en Google Maps</span><span class="ico" aria-hidden="true"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 8. FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-mark" aria-hidden="true">Boca Nariz</p>
+    <div class="foot-grid">
+      <div>
+        <h3>Boca Nariz Interlomas</h3>
+        <p>Vialidad de la Barranca 6, Bosque de las Palmas, 52779 Naucalpan de Juárez, Estado de México. Paseo Interlomas.</p>
+        <p style="margin-top:.6rem"><a class="link" href="tel:+525523459621">55 2345 9621</a></p>
+      </div>
+      <div>
+        <h3>Explora</h3>
+        <ul>
+          <li><a class="link" href="#carta">Carta</a></li>
+          <li><a class="link" href="#galeria">Galería</a></li>
+          <li><a class="link" href="#visita">Ubicación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>En línea</h3>
+        <ul>
+          <li><a class="link" href="https://boca-nariz.com.mx/" target="_blank" rel="noopener">Sitio oficial</a></li>
+          <li><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Boca+Nariz+Interlomas" target="_blank" rel="noopener">Reseñas en Google</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Boca Nariz Interlomas</span>
+      <span>Cocina española en Paseo Interlomas, Estado de México</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lb" aria-label="Imagen ampliada">
+  <div class="lb-inner">
+    <div class="lb-top">
+      <p id="lb-cap"></p>
+      <button class="round" id="lb-close" aria-label="Cerrar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 3l10 10M13 3 3 13"/></svg></button>
+    </div>
+    <div class="lb-stage" id="lb-stage"></div>
+    <div class="lb-nav">
+      <button class="round" id="lb-prev" aria-label="Imagen anterior"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 3 5 8l5 5"/></svg></button>
+      <button class="round" id="lb-next" aria-label="Imagen siguiente"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m6 3 5 5-5 5"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+"use strict";
+
+/* ================== CONFIGURACIÓN ================== */
+/* Sustituir por rutas a fotografía oficial (p. ej. "img/tabla.webp"). Vacío = ilustración. */
+var PHOTOS = {
+  hero:"", esencia1:"", esencia2:"", ambiente1:"", ambiente2:"",
+  tabla:"", croquetas:"", tortilla:"", bratwurst:"", cazuela:"", setas:"", pepito:"", carnesfrias:"",
+  g1:"", g2:"", g3:"", g4:"", g5:"", g6:"", g7:""
+};
+var CARTA_URL = "https://boca-nariz.com.mx/"; /* Cambiar por el enlace directo a la carta oficial */
+var DEST = "Boca Nariz Interlomas, Vialidad de la Barranca 6, Bosque de las Palmas, 52779 Naucalpan de Juárez, Méx.";
+
+var DISHES = [
+  {key:"tabla", art:"tabla", name:"Tabla de quesos y jamón serrano", desc:"Para abrir la mesa y compartir mientras llega lo demás."},
+  {key:"croquetas", art:"croquetas", name:"Croquetas de jamón serrano", desc:"Un clásico de cualquier barra española, para picar entre todos."},
+  {key:"tortilla", art:"tortilla", name:"Tortilla española", desc:"La receta de casa por excelencia, servida al centro de la mesa."},
+  {key:"bratwurst", art:"bratwurst", name:"Salchicha alemana tipo bratwurst", desc:"Un invitado de fuera de España que también tiene sitio en la carta."},
+  {key:"cazuela", art:"cazuela", name:"Cazuela de camarones", desc:"Llega en cazuela al centro de la mesa, para compartir."},
+  {key:"setas", art:"setas", name:"Setas", desc:"Una tapa más para completar la ronda."},
+  {key:"pepito", art:"pepito", name:"Baguette de pepito de filete", desc:"El pepito de filete en baguette, para cuando el hambre va en serio."},
+  {key:"carnesfrias", art:"carnesfrias", name:"Baguette de carnes frías", desc:"Baguette de carnes frías, para comer sin prisa o partir en dos."}
+];
+
+var GALLERY = [
+  {key:"g1", art:"mesa", cap:"La mesa llena", cls:"g1"},
+  {key:"g2", art:"copas", cap:"Una ronda de vino", cls:"g2"},
+  {key:"g3", art:"croquetas", cap:"Croquetas", cls:"g3"},
+  {key:"g4", art:"setas", cap:"Setas", cls:"g4"},
+  {key:"g5", art:"botella", cap:"Vino tinto", cls:"g5"},
+  {key:"g6", art:"tortilla", cap:"Tortilla española", cls:"g6"},
+  {key:"g7", art:"tabla", cap:"Quesos y jamón serrano", cls:"g7"}
+];
+
+/* ================== ILUSTRACIONES ================== */
+var G = "#C8A05A", C = "#F0E4CC", W = "#7A1E2B";
+function svg(body){
+  return '<svg class="art" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" fill="none" stroke="'+G+'" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+body+'</svg>';
+}
+function plate(cx,cy,r){ return '<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" stroke-opacity=".55"/><circle cx="'+cx+'" cy="'+cy+'" r="'+(r*0.78)+'" stroke-opacity=".3"/>'; }
+function glass(x,y,s,fill){
+  var t = 'translate('+x+' '+y+') scale('+s+')';
+  return '<g transform="'+t+'"><path d="M-22 -60C-24 -30 -20 -6 0 0 20 -6 24 -30 22 -60Z" stroke="'+C+'" stroke-opacity=".75"/>'+
+    (fill?'<path d="M-23 -36C-22 -18 -16 -5 0 0 16 -5 22 -18 23 -36Z" fill="'+W+'" fill-opacity=".85" stroke="none"/>':'')+
+    '<path d="M0 0V48M-18 52H18" stroke="'+C+'" stroke-opacity=".75"/><path d="M-14 -54C-15 -40 -13 -30 -9 -24" stroke="'+C+'" stroke-opacity=".5"/></g>';
+}
+function dots(n,x0,y0,w,h,seed){
+  var s = seed||7, out = "";
+  for(var i=0;i<n;i++){ s=(s*9301+49297)%233280; var x=x0+(s/233280)*w; s=(s*9301+49297)%233280; var y=y0+(s/233280)*h;
+    out+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r=".9" fill="'+G+'" stroke="none" fill-opacity=".6"/>'; }
+  return out;
+}
+var ART = {
+  tabla: function(){ return svg(
+    '<g transform="rotate(-8 200 200)"><rect x="70" y="120" width="260" height="170" rx="14"/><rect x="330" y="190" width="40" height="30" rx="10" stroke-opacity=".6"/>'+
+    '<path d="M95 270 150 150 205 270Z" fill="'+C+'" fill-opacity=".08"/><path d="M110 240h70M122 210h45" stroke-opacity=".4"/>'+
+    '<path d="M215 150c20 10 40-6 60 4s30-4 40 8M215 175c22 8 38-8 60 2s32-2 42 10M218 200c20 10 36-4 58 4s30 0 40 12" stroke="'+W+'" stroke-width="2.2" stroke-opacity=".9"/>'+
+    '<path d="M215 150c20 10 40-6 60 4s30-4 40 8M215 175c22 8 38-8 60 2s32-2 42 10M218 200c20 10 36-4 58 4s30 0 40 12"/>'+
+    '<circle cx="240" cy="250" r="8"/><circle cx="262" cy="258" r="8"/><circle cx="284" cy="248" r="8"/></g>'); },
+  croquetas: function(){ var b='',p=[[150,170,-20],[215,150,15],[260,205,-35],[175,235,25],[230,255,5]];
+    p.forEach(function(q,i){ b+='<g transform="rotate('+q[2]+' '+q[0]+' '+q[1]+')"><rect x="'+(q[0]-36)+'" y="'+(q[1]-17)+'" width="72" height="34" rx="17" fill="'+C+'" fill-opacity=".05"/>'+dots(14,q[0]-30,q[1]-12,60,24,i*31+5)+'</g>'; });
+    return svg(plate(205,205,130)+b); },
+  tortilla: function(){ return svg(plate(200,205,135)+
+    '<path d="M200 205 L292 160 A100 100 0 1 1 245 115 Z" fill="'+C+'" fill-opacity=".06"/>'+
+    '<path d="M150 190c20 8 40-4 60 6M140 230c30 6 50-6 80 2M170 260c20 4 40-4 60 0" stroke-opacity=".4"/>'+
+    '<path d="M265 98 L312 145 A92 92 0 0 0 290 108Z" transform="translate(18 -14)" fill="'+C+'" fill-opacity=".08"/>'); },
+  bratwurst: function(){ return svg('<ellipse cx="200" cy="215" rx="165" ry="105" stroke-opacity=".5"/><ellipse cx="200" cy="215" rx="130" ry="80" stroke-opacity=".28"/>'+
+    '<path d="M95 245C140 165 260 160 310 200" stroke-width="30" stroke="'+W+'" stroke-opacity=".75"/>'+
+    '<path d="M85 238C130 150 270 145 320 192M105 258C150 185 255 180 300 212"/>'+
+    '<path d="M140 190l14 22M175 178l12 24M210 174l10 24M245 178l8 24M278 188l6 22" stroke-opacity=".7"/>'+
+    '<path d="M110 280c20-10 40 6 60-4s30 8 50 0" stroke="'+C+'" stroke-opacity=".5"/>'); },
+  cazuela: function(){ var b='',p=[[170,180,0],[235,175,40],[200,240,-30],[150,240,70],[255,240,110]];
+    p.forEach(function(q){ b+='<g transform="rotate('+q[2]+' '+q[0]+' '+q[1]+')"><path d="M'+(q[0]-20)+' '+q[1]+'a20 20 0 1 1 30 17" stroke="'+C+'" stroke-opacity=".8" stroke-width="5"/><path d="M'+(q[0]+10)+' '+(q[1]+17)+'l10 8m-10-8l2 12" stroke="'+C+'" stroke-opacity=".7"/></g>'; });
+    return svg('<path d="M65 195h-25M335 195h25" stroke-width="10" stroke="'+W+'"/><circle cx="200" cy="205" r="138" fill="'+W+'" fill-opacity=".35"/><circle cx="200" cy="205" r="138"/><circle cx="200" cy="205" r="118" stroke-opacity=".4"/>'+b+dots(30,110,140,180,140,3)); },
+  setas: function(){ function m(x,y,s){ return '<g transform="translate('+x+' '+y+') scale('+s+')"><path d="M-45 0C-45 -40 45 -40 45 0Z" fill="'+C+'" fill-opacity=".06"/><path d="M-45 0H45M-30 0c4 8 4 8 0 0M-15 0v6M0 0v7M15 0v6"/><path d="M-12 0C-14 30 -10 50 -16 62H16C10 50 14 30 12 0" stroke-opacity=".8"/></g>'; }
+    return svg(plate(200,215,140)+m(160,190,1)+m(250,215,.8)+m(195,265,.65)+m(275,150,.55)); },
+  pepito: function(){ return svg('<g transform="rotate(-14 200 210)"><rect x="40" y="175" width="320" height="70" rx="35" fill="'+C+'" fill-opacity=".05"/>'+
+    '<path d="M95 185c10 12 18 18 30 22M150 185c10 12 18 18 30 22M205 185c10 12 18 18 30 22M260 185c10 12 18 18 30 22" stroke-opacity=".6"/>'+
+    '<path d="M50 225c30 14 60 -6 90 8s60 -8 90 4 60 -6 110 6" stroke="'+W+'" stroke-width="7" stroke-opacity=".85"/></g>'+
+    '<path d="M60 320h280" stroke-opacity=".3"/>'); },
+  carnesfrias: function(){ var c='';[[110,215],[160,208],[210,204],[260,206],[305,212]].forEach(function(q){ c+='<ellipse cx="'+q[0]+'" cy="'+q[1]+'" rx="26" ry="12" fill="'+W+'" fill-opacity=".7" stroke-opacity=".8"/>'; });
+    return svg('<g transform="rotate(10 200 210)"><rect x="45" y="170" width="310" height="80" rx="40" fill="'+C+'" fill-opacity=".05"/>'+c+
+    '<path d="M70 235c40 8 80-6 130 2s100-6 140 2" stroke="'+C+'" stroke-opacity=".5"/><path d="M90 180c8 8 14 12 24 14M200 178c8 8 14 12 24 14M300 182c6 6 12 10 20 12" stroke-opacity=".5"/></g>'); },
+  copas: function(){ return svg('<circle cx="200" cy="140" r="90" fill="'+G+'" fill-opacity=".06" stroke="none"/>'+glass(165,230,1.9,true)+glass(245,236,1.7,true)+'<path d="M90 340h220" stroke-opacity=".3"/>'); },
+  botella: function(){ return svg('<path d="M150 70h30v60c0 20 30 30 30 70v150h-90V200c0-40 30-50 30-70Z" fill="'+W+'" fill-opacity=".5"/><path d="M150 70h30M152 70v-14h26v14" stroke-opacity=".8"/><rect x="128" y="220" width="74" height="70" rx="4" stroke="'+C+'" stroke-opacity=".5"/><path d="M140 245h50M148 262h34" stroke="'+C+'" stroke-opacity=".4"/>'+glass(280,300,1.6,true)+'<path d="M60 350h300" stroke-opacity=".3"/>'); },
+  mesa: function(){ return svg('<rect x="-20" y="-20" width="440" height="440" fill="'+W+'" fill-opacity=".08" stroke="none"/>'+
+    plate(110,120,62)+plate(290,110,54)+plate(120,300,58)+plate(280,290,66)+
+    '<g transform="scale(.48) translate(140 160)">'+ '<path d="M95 270 150 150 205 270Z" fill="'+C+'" fill-opacity=".08"/><path d="M215 150c20 10 40-6 60 4s30-4 40 8M215 175c22 8 38-8 60 2s32-2 42 10" stroke="'+W+'" stroke-width="3"/>'+'</g>'+
+    '<g transform="translate(280 110)"><rect x="-26" y="-10" width="52" height="22" rx="11" transform="rotate(-20)"/><rect x="-20" y="10" width="44" height="20" rx="10" transform="rotate(15)"/></g>'+
+    '<circle cx="280" cy="290" r="40" fill="'+C+'" fill-opacity=".05"/><path d="M280 290l40-14" stroke-opacity=".5"/>'+
+    '<g transform="translate(120 300)"><path d="M-25 -12c4-20 46-20 50 0Z"/><path d="M-6 -12v18M6 -12v18"/></g>'+
+    '<circle cx="200" cy="205" r="22" fill="'+W+'" fill-opacity=".9" stroke="'+C+'" stroke-opacity=".7"/><circle cx="352" cy="200" r="20" fill="'+W+'" fill-opacity=".8" stroke="'+C+'" stroke-opacity=".6"/><circle cx="40" cy="210" r="18" fill="'+W+'" fill-opacity=".7" stroke="'+C+'" stroke-opacity=".6"/>'+
+    '<path d="M-10 210c60-10 120 14 200 0s150 10 220-4" stroke-opacity=".15"/>'); }
+};
+
+function paint(el, artKey, photoKey){
+  var host = el.querySelector(".inner") || el;
+  var src = photoKey && PHOTOS[photoKey];
+  if(src){ host.innerHTML = '<img src="'+src+'" alt="" loading="lazy" decoding="async">'; }
+  else { host.innerHTML = (ART[artKey] ? ART[artKey]() : ""); }
+}
+
+/* ================== CONSTRUIR CONTENIDO ================== */
+var arrow = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13 13 3M6 3h7v7"/></svg>';
+var track = document.getElementById("htrack");
+var html = "";
+DISHES.forEach(function(d){
+  html += '<article class="dish" role="listitem"><div class="dish-shell"><div class="ph" data-art="'+d.art+'" data-photo="'+d.key+'" role="img" aria-label="'+d.name+'"><div class="inner"></div></div></div><h3>'+d.name+'</h3><p>'+d.desc+'</p></article>';
+});
+html += '<div class="dish-end" role="listitem"><h3>Hay más en la carta</h3><p>Consulta la carta completa y actualizada en el sitio oficial de Boca Nariz.</p><a class="btn btn-primary" href="'+CARTA_URL+'" target="_blank" rel="noopener">Consultar carta completa<span class="ico" aria-hidden="true">'+arrow+'</span></a></div>';
+track.innerHTML = html;
+
+var gal = document.getElementById("gal");
+gal.innerHTML = GALLERY.map(function(g,i){
+  return '<button class="'+g.cls+' reveal-img" data-i="'+i+'" aria-label="Ampliar imagen: '+g.cap+'"><div class="ph" data-art="'+g.art+'" data-photo="'+g.key+'"><div class="inner"></div></div><span class="cap">'+g.cap+'</span></button>';
+}).join("");
+
+document.querySelectorAll(".ph[data-art]").forEach(function(el){ paint(el, el.getAttribute("data-art"), el.getAttribute("data-photo")); });
+
+/* Estrellas (4.2 / 5) */
+var starPath = "M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z";
+var stars = ""; for(var s=0;s<5;s++){ var fill = Math.max(0, Math.min(1, 4.2 - s));
+  stars += '<svg viewBox="0 0 24 24"><defs><linearGradient id="sg'+s+'"><stop offset="'+(fill*100)+'%" stop-color="'+G+'"/><stop offset="'+(fill*100)+'%" stop-color="rgba(240,228,204,.15)"/></linearGradient></defs><path d="'+starPath+'" fill="url(#sg'+s+')"/></svg>'; }
+document.getElementById("stars").innerHTML = stars;
+
+/* Enlaces de mapa */
+var mapsDir = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(DEST);
+var mapsSearch = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(DEST);
+document.getElementById("dir-btn").href = mapsDir;
+document.getElementById("map-link").href = mapsSearch;
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ================== NAVBAR ================== */
+var nav = document.getElementById("nav"), lastY = window.scrollY, menuOpen = false;
+function onScroll(){
+  var y = window.scrollY;
+  nav.classList.toggle("scrolled", y > 40);
+  if(!menuOpen){ nav.classList.toggle("hidden", y > lastY && y > 500); }
+  lastY = y;
+}
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+var burger = document.getElementById("burger"), menu = document.getElementById("menu");
+function setMenu(open){
+  menuOpen = open;
+  burger.setAttribute("aria-expanded", String(open));
+  burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  menu.classList.toggle("open", open);
+  menu.setAttribute("aria-hidden", String(!open));
+  document.body.style.overflow = open ? "hidden" : "";
+  if(open){ nav.classList.remove("hidden"); var f = menu.querySelector("a"); if(f) setTimeout(function(){ f.focus(); }, 200); }
+}
+burger.addEventListener("click", function(){ setMenu(!menuOpen); });
+menu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ setMenu(false); }); });
+document.addEventListener("keydown", function(e){ if(e.key === "Escape" && menuOpen){ setMenu(false); burger.focus(); } });
+
+/* Enlace activo */
+var links = document.querySelectorAll('.nav ul a');
+var secIds = ["inicio","esencia","carta","galeria","opiniones","visita"];
+if("IntersectionObserver" in window){
+  var so = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ links.forEach(function(l){ l.classList.toggle("active", l.getAttribute("href") === "#"+en.target.id); }); } });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  secIds.forEach(function(id){ var el = document.getElementById(id); if(el) so.observe(el); });
+}
+
+/* ================== LIGHTBOX ================== */
+var lb = document.getElementById("lb"), lbStage = document.getElementById("lb-stage"), lbCap = document.getElementById("lb-cap"), cur = 0, lastFocus = null;
+function showLb(i){
+  cur = (i + GALLERY.length) % GALLERY.length;
+  var g = GALLERY[cur];
+  lbStage.innerHTML = '<div class="ph" role="img" aria-label="'+g.cap+'"></div>';
+  paint(lbStage.firstChild, g.art, g.key);
+  lbCap.textContent = g.cap + "  (" + (cur+1) + " de " + GALLERY.length + ")";
+}
+gal.addEventListener("click", function(e){
+  var b = e.target.closest("button[data-i]"); if(!b) return;
+  lastFocus = b; showLb(+b.getAttribute("data-i"));
+  if(typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open","");
+  document.body.style.overflow = "hidden";
+});
+function closeLb(){ if(lb.open){ lb.close(); } }
+lb.addEventListener("close", function(){ document.body.style.overflow = ""; if(lastFocus) lastFocus.focus(); });
+document.getElementById("lb-close").addEventListener("click", closeLb);
+document.getElementById("lb-prev").addEventListener("click", function(){ showLb(cur-1); });
+document.getElementById("lb-next").addEventListener("click", function(){ showLb(cur+1); });
+lb.addEventListener("click", function(e){ if(e.target === lb || e.target.classList.contains("lb-stage")) closeLb(); });
+lb.addEventListener("keydown", function(e){ if(e.key === "ArrowLeft") showLb(cur-1); if(e.key === "ArrowRight") showLb(cur+1); });
+var tx = null;
+lb.addEventListener("touchstart", function(e){ tx = e.touches[0].clientX; }, {passive:true});
+lb.addEventListener("touchend", function(e){ if(tx === null) return; var dx = e.changedTouches[0].clientX - tx; if(Math.abs(dx) > 50) showLb(cur + (dx < 0 ? 1 : -1)); tx = null; });
+
+/* ================== ANIMACIÓN ================== */
+var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var hasGsap = !!(window.gsap && window.ScrollTrigger);
+
+function splitWords(el){
+  var words = el.textContent.trim().split(/\s+/);
+  el.setAttribute("aria-label", el.textContent.trim());
+  el.innerHTML = words.map(function(w){ return '<span class="w" aria-hidden="true"><span class="wi">'+w+'</span></span>'; }).join(" ");
+}
+function splitChars(line){
+  var t = line.textContent; line.innerHTML = t.split("").map(function(c){ return '<span class="ch">'+c+'</span>'; }).join("");
+}
+
+if(reduce){
+  /* Sin animación: todo visible desde el inicio. */
+  return;
+}
+
+if(!hasGsap){
+  /* Alternativa sin GSAP: aparición con IntersectionObserver */
+  document.documentElement.classList.add("io-ready");
+  var els = document.querySelectorAll("[data-reveal]");
+  els.forEach(function(el){ el.style.opacity = "0"; el.style.transform = "translateY(40px)"; });
+  var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.style.opacity = ""; en.target.style.transform = ""; en.target.classList.add("in"); io.unobserve(en.target); } }); }, {threshold:.15});
+  requestAnimationFrame(function(){ els.forEach(function(el){ io.observe(el); }); });
+  return;
+}
+
+gsap.registerPlugin(ScrollTrigger);
+document.querySelectorAll(".wordmark .line").forEach(splitChars);
+document.querySelectorAll(".split").forEach(splitWords);
+document.documentElement.classList.add("anim");
+
+var EASE = "expo.out";
+
+/* Entrada del hero: un único momento orquestado */
+var heroTl = gsap.timeline({defaults:{ease:EASE}});
+heroTl
+  .to(".hero-media .ph", {clipPath:"inset(0% 0% 0% 0% round 0rem)", duration:1.8, ease:"power4.inOut"}, 0)
+  .fromTo(".hero-media .ph svg, .hero-media .ph img", {scale:1.25}, {scale:1, duration:2.6, ease:"power3.out"}, 0)
+  .to(".wordmark .line:nth-child(1) .ch", {y:0, duration:1.4, stagger:.06}, .55)
+  .to(".wordmark .line:nth-child(2) .ch", {y:0, duration:1.4, stagger:.06}, .75)
+  .to(".hero-fade", {opacity:1, y:0, duration:1.2, stagger:.15}, 1.3);
+
+/* Parallax del hero y del título al salir */
+gsap.to(".hero-media", {yPercent:22, ease:"none", scrollTrigger:{trigger:".hero", start:"top top", end:"bottom top", scrub:true}});
+gsap.to(".wordmark", {yPercent:-18, opacity:.25, ease:"none", scrollTrigger:{trigger:".hero", start:"top top", end:"bottom top", scrub:true}});
+
+/* Text reveal palabra por palabra */
+document.querySelectorAll(".split").forEach(function(h){
+  gsap.to(h.querySelectorAll(".wi"), {y:0, duration:1.2, ease:EASE, stagger:.07, scrollTrigger:{trigger:h, start:"top 85%"}});
+});
+
+/* Scroll reveal de textos y bloques */
+gsap.utils.toArray("[data-reveal]").forEach(function(el){
+  gsap.to(el, {opacity:1, y:0, duration:1.2, ease:EASE, scrollTrigger:{trigger:el, start:"top 88%"}});
+});
+
+/* Image reveal con recorte */
+gsap.utils.toArray(".reveal-img").forEach(function(el){
+  if(el.closest(".gal")) return;
+  gsap.to(el, {clipPath:"inset(0% 0 0 0 round 1.5rem)", duration:1.6, ease:"power4.inOut", scrollTrigger:{trigger:el, start:"top 85%"}});
+});
+ScrollTrigger.batch(".gal .reveal-img", {start:"top 90%", onEnter:function(b){ gsap.to(b, {clipPath:"inset(0% 0 0 0 round 1.2rem)", duration:1.3, ease:"power4.inOut", stagger:.1}); }});
+
+/* Parallax de profundidad */
+gsap.utils.toArray("[data-speed]").forEach(function(el){
+  if(el.closest(".hero")) return;
+  var sp = parseFloat(el.getAttribute("data-speed"));
+  gsap.fromTo(el, {yPercent:-sp*50}, {yPercent:sp*50, ease:"none", scrollTrigger:{trigger:el.parentElement, start:"top bottom", end:"bottom top", scrub:true}});
+});
+
+/* Scroll horizontal de la carta (solo escritorio) */
+var mm = gsap.matchMedia();
+mm.add("(min-width: 901px)", function(){
+  var hpin = document.getElementById("hpin");
+  function dist(){ return Math.max(0, track.scrollWidth - window.innerWidth); }
+  var tw = gsap.to(track, {x:function(){ return -dist(); }, ease:"none",
+    scrollTrigger:{trigger:hpin, start:"top top", end:function(){ return "+=" + dist(); }, pin:true, scrub:.8, invalidateOnRefresh:true, anticipatePin:1,
+      onUpdate:function(self){ gsap.set("#hbar", {scaleX:self.progress}); }}});
+  /* Ligera inclinación de cada plato según la velocidad */
+  gsap.utils.toArray(".dish .ph .inner").forEach(function(inner){
+    gsap.fromTo(inner, {xPercent:6}, {xPercent:-6, ease:"none", scrollTrigger:{trigger:inner.closest(".dish"), containerAnimation:tw, start:"left right", end:"right left", scrub:true}});
+  });
+  return function(){ gsap.set(track, {clearProps:"transform"}); };
+});
+
+/* Transición de fondo: el beige de la carta da paso al vino */
+gsap.fromTo(".ambiente", {backgroundColor:"#3a1218"}, {backgroundColor:"#2A0D12", ease:"none", scrollTrigger:{trigger:".ambiente", start:"top bottom", end:"top 30%", scrub:true}});
+
+/* Contadores */
+document.querySelectorAll(".count").forEach(function(el){
+  var to = parseFloat(el.getAttribute("data-to")), dec = parseInt(el.getAttribute("data-dec"),10), o = {v:0};
+  el.textContent = (0).toFixed(dec);
+  ScrollTrigger.create({trigger:el, start:"top 85%", once:true, onEnter:function(){
+    gsap.to(o, {v:to, duration:2, ease:"power3.out", onUpdate:function(){ el.textContent = o.v.toFixed(dec); }});
+  }});
+});
+
+/* Footer: el nombre se dibuja al llegar */
+gsap.fromTo(".foot-mark", {yPercent:30, opacity:0}, {yPercent:0, opacity:1, duration:1.6, ease:EASE, scrollTrigger:{trigger:".foot", start:"top 85%"}});
+
+window.addEventListener("load", function(){ ScrollTrigger.refresh(); });
+if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ ScrollTrigger.refresh(); }); }
+})();
+</script>
+</body>
+</html>
